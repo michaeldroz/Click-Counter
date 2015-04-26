@@ -11,19 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     var count = 0
-    var label:UILabel!
+    @IBOutlet var label:UILabel!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.whiteColor()
+        //self.view.backgroundColor = UIColor.whiteColor()
         
         
         //Label
-        var label = UILabel()
+        /*var label = UILabel()
         label.frame = CGRectMake(150, 150, 60, 60)
         label.text = "0"
         self.view.addSubview(label)
@@ -62,11 +60,11 @@ class ViewController: UIViewController {
         button3.setTitleColor(UIColor.blackColor(), forState: .Normal)
         self.view.addSubview(button3)
         
-        button3.addTarget(self, action: "changeBGColor", forControlEvents: UIControlEvents.TouchUpInside)
+        button3.addTarget(self, action: "changeBGColor", forControlEvents: UIControlEvents.TouchUpInside) */
         
     }
     
-    func incrementCount() {
+    @IBAction func incrementCount() {
     
         self.count++
         self.label.text = "\(self.count)"
