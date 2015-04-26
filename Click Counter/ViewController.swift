@@ -4,7 +4,7 @@
 //
 //  Created by Michael Droz on 4/25/15.
 //  Copyright (c) 2015 Benefakter Apps. All rights reserved.
-//
+//  Adding to GitHub
 
 import UIKit
 
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.blueColor(), forState: .Normal)
         self.view.addSubview(button)
         
-                
+        
         button.addTarget(self, action: "incrementCount",
             forControlEvents: UIControlEvents.TouchUpInside)
         
